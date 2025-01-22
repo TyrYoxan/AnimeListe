@@ -1,5 +1,5 @@
 {
-  "name": "BanqueAnim",
+  "name": "AnimeListe",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,8 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.47.16",
     "axios": "^1.7.9",
-    "vue": "^3.5.13"
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

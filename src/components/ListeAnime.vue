@@ -17,6 +17,11 @@ export default{
       type: Array,
       required: true
     }
+  },
+  methods: {
+    addAnime(anime) {
+      this.$router.push({ name: 'add', params: { id: anime.id } })
+    }
   }
 }
 </script>
@@ -30,6 +35,7 @@ export default{
       <p>Synopsis: {{cutText(anime.attributes.synopsis, 200)}}</p>
       <p>Nombre d'épisode: {{anime.attributes.episodeCount}}</p>
     </div>
+    <button @click="addAnime(anime)">Ajouter</button>
   </div>
 </template>
 
